@@ -44,3 +44,16 @@ yarn g
 // or
 npm run g
 ```
+
+### 组件库目录
+```
+---[src]
+    --[components]
+        --[ComonentName]
+            --[demos]
+                -- demo1.js
+                -- demo2.js
+            --index.js
+            --README.md
+    README.md
+```
