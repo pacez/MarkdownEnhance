@@ -1,6 +1,6 @@
 {
   "name": "markdownenhance",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "使用markdown写作react组件文档与demo的编译工具",
   "main": "index.js",
   "scripts": {

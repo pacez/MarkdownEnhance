@@ -5,9 +5,9 @@
 ### CONFIG
 ```json
 {
-    "COMPONENT_PAHT": "/Users/pacez/Workspace/beisen/E-Learning/ice/src/components",
-    "OUTPUT_PATH": "/Users/pacez/Workspace/beisen/E-Learning/ice-site/src/__site__",
-    "INDEX_READAME_PATH": "/Users/pacez/Workspace/beisen/E-Learning/ice/src/README.md"
+    "COMPONENT_PAHT": "/Users/project/src/components",
+    "OUTPUT_PATH": "/Users/project/src/__site__",
+    "INDEX_READAME_PATH": "/Users/project/src/README.md"
 }
 ```
 
