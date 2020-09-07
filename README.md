@@ -36,7 +36,7 @@ yarn add markdownenhance
 打开package.json，在scripts添加以下脚本
 ```javascript
 // 安装依赖
-"g": "markdownenhance"
+"g": "node ./node_modules/markdownenhance --config ./.me_config.json"
 ```
 运行
 ```javascript
