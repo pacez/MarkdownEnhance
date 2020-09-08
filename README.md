@@ -65,8 +65,7 @@ npm run g
 ### Component README.md 模板
 
 本工具会自动寻找组件目录下的README.md文档进行解析，并编译README.md中通过source://引入的组件，进行组件与code双重展示  
-*强制约定，demo组件都放到组件下的demo目录中*
-
+*强制约定，demo组件都放到组件下的demo目录中*  
 
 ```markdown
 # Title
