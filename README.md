@@ -62,6 +62,9 @@ npm run g
 
 
 ### Component README.md 模板
+
+***本工具会自动寻找组件目录下的README.md文档进行解析，并编译README.md中在代码块里通过source://引入的组件，进行组件与code双重展示。***
+
 ```markdown
 
 # Title
@@ -75,4 +78,3 @@ index.js 位于 组件目录下 [demos]目录下, 参考上面组件库目录内
 ...
 ```
 
-***本工具会自动寻找组件目录下的README.md文档进行解析，并编译README.md中在代码块里通过source://引入的组件，进行组件与code双重展示。***
