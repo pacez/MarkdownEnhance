@@ -71,11 +71,10 @@ npm run g
 
 ### 示例
 
-\`\`\`javascript
+```javascript
 source://index.js
-\`\`\`
+```
 index.js 位于 组件目录下 [demos]目录下, 参考上面组件库目录内容。  
 
-...
 ```
 
