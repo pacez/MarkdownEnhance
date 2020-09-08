@@ -59,3 +59,19 @@ npm run g
             --README.md
     README.md
 ```
+
+
+### Component README.md 模板
+```markdown
+# Title
+
+### 示例
+\`\`\`javascript
+source://index.js
+\`\`\`
+
+
+index.js 位于 组件目录下 [demos]目录下
+
+Content...
+```
