@@ -53,7 +53,7 @@ npm run g
 ---[src]
     --[components]
         --[ComonentName]
-            --[demos]
+            --[demo]
                 -- demo1.js
                 -- demo2.js
             --index.js
@@ -75,7 +75,7 @@ npm run g
     source://index.js
     ```
 
-index.js 位于 组件目录下 [demos]目录下, 参考上面组件库目录章节
+index.js 位于 组件目录下 [demo]目录下, 参考上面组件库目录章节
 
 Content...
 

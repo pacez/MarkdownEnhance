@@ -67,6 +67,7 @@ const outputFormat = (str) => {
     return prettier.format(str, { semi: false, parser: "babel" })
 }
 
+const demoFolderName = "demo";
 
 // 日期对象扩展时间格式化方法
 
@@ -111,7 +112,7 @@ const build = (lib) => {
     components.forEach(component => {
         // 组件名
         const name = component.match(/\/([\w\d]+)$/)[1];
-        const demosPathSource = `${ICE_COMPONENTS_PATH}/${name}/demos`;
+        const demosPathSource = `${ICE_COMPONENTS_PATH}/${name}/${demoFolderName}`;
 
         // 生成网站信息的JSON
         SITE_INFO.components.push(name);
@@ -164,7 +165,7 @@ const build = (lib) => {
             if (components.length > 0) {
                 importDemosCode = components.map(item => {
                     const demoName = item.split('.')[0];
-                    return `import ${firstToUpperCase(demoName)} from './demos/${item}'`;
+                    return `import ${firstToUpperCase(demoName)} from './${demoFolderName}/${item}'`;
                 }).join('\n');
             }
 
@@ -205,18 +206,18 @@ const build = (lib) => {
             console.log(`组件文件${name}拷贝异常`, e);
         }
 
-        // 获取组件下的demos
-        glob.sync(`${component}/demos/*`).map(demo => {
+        // 获取组件下的demo
+        glob.sync(`${component}/${demoFolderName}/*`).map(demo => {
             try {
                 const demoSplit = demo.split('/');
                 const fileName = demoSplit[demoSplit.length - 1];
-                const demoDestPath = `${SITE_PATH}/${name}/demos/${fileName}`;
+                const demoDestPath = `${SITE_PATH}/${name}/${demoFolderName}/${fileName}`;
                 fs.copySync(
                     demo,
                     demoDestPath,
                 );
             } catch (e) {
-                console.log(`${name} demos 拷贝异常`, e);
+                console.log(`${name} ${demoFolderName} 拷贝异常`, e);
             }
             return demo
         });
